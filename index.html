@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+        integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Portfolio Maker </title>
+</head>
+
+<body class="bg-dark text-light fs-5">
+
+     <nav class="navbar navbar-expand-lg bg-dark "> 
+        <div class="container">
+            <a class="navbar-brand text-light fs-2  text-primary fw-bold" href="#"> </span>Portf<span class="link-primary">Maker.</span></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5 gap-md-3 py-md-5 py-lg-0 py-sm-4">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light text-uppercase " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase" href="#"> Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase" href="#"> News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light text-uppercase" href="#"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <hr>
+
+    <section class="container py-5 my-5">
+        <div class="row">
+            <div class="col-md-10">
+                <h1 class="text-uppercase text-light display-1 fw-semibold "> <span class="text-primary fw-bold">Create  </span> Your <br> Portfolio </h1>
+                <a class="text-light text-bg-primary text-decoration-none p-3 px-5 mt-5 d-inline-block" href="#">All Projects</a>
+            </div>
+
+            <div class="col d-none d-md-flex flex-column justify-content-end gap-2">
+                <button type="button" class="btn btn-dark border-secondary ms-auto p-2 px-3 fs-5" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Facebook"> <i class="fa-brands fa-facebook-f"></i> </button>
+                <button type="button" class="btn btn-dark border-secondary ms-auto p-2 px-3 " data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Instagram"> <i class="fa-brands fa-instagram"></i></button>
+                <button type="button" class="btn btn-dark border-secondary ms-auto p-2 px-3 " data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Twitter">  <i class="fa-brands fa-twitter"></i></button>
+                <button type="button" class="btn btn-dark border-secondary ms-auto p-2 px-3 " data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="You Tube">  <i class="fa-brands fa-youtube"></i> </button>
+            </div>
+            
+        </div>
+    </section>
+   
+    
+
+
+
+
+
+    <!-- bootstrap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js" integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    
+</body>
+
+</html>
