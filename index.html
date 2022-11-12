@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Images/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- bootstrap css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
         integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
@@ -16,7 +24,7 @@
     <title> Portfolio Maker </title>
 </head>
 
-<body class="bg-dark text-light fs-5">
+<body class="bg-dark text-light fs-5 "> 
 
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container mt-3">
@@ -31,16 +39,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-5 gap-md-3 py-md-5 py-lg-0 py-sm-4">
                     <li class="nav-item">
-                        <a class="nav-link active text-light text-uppercase " aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-light text-uppercase " aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light text-uppercase" href="#"> Portfolio</a>
+                        <a class="nav-link text-light text-uppercase" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light text-uppercase" href="#"> News</a>
+                        <a class="nav-link text-light text-uppercase" href="#portfolio"> Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light text-uppercase" href="#"> Contact</a>
+                        <a class="nav-link text-light text-uppercase" href="#reviews"> Reviews</a>
                     </li>
                 </ul>
             </div>
@@ -49,12 +57,12 @@
     </nav>
     <hr>
 
-    <section class="container py-5 my-5">
+    <section class="container py-5 my-5" id="home">
         <div class="row">
             <div class="col-md-10">
                 <h1 class="text-uppercase text-light display-1 fw-semibold "> <span class="text-primary fw-bold">Create
                     </span> Your <br> Portfolio </h1>
-                <a class="text-light text-bg-primary text-decoration-none py-2 px-4 p-sm-3 px-sm-5 mt-5 d-inline-block"
+                <a class="btn btn-primary text-light fs-5 text-decoration-none py-2 px-4 p-sm-3 px-sm-5 mt-5 d-inline-block"
                     href="#">All Projects</a>
             </div>
 
@@ -73,7 +81,7 @@
         </div>
     </section>
 
-    <section class="container my-5 py-5 ">
+    <section class="container my-5 py-5 " id="services">
         <div class="row mx-auto">
             <div class="shorthead w-25 d-flex align-items-center text-primary gap-3">
                 <hr class=" w-25 text-primary opacity-100 ">
@@ -133,7 +141,7 @@
 
     <section class="position-relative my-5">
         <img src="./Images/img1.jpg" class="w-100" alt="Loading Image">
-        <i class="fa-regular fa-circle-play position-absolute top-50 start-50 display-1 text-dark"
+        <i class="fa-regular fa-circle-play position-absolute top-50 start-50 display-1 text-primary"
             data-bs-toggle="modal" data-bs-target="#vidmodal"></i>
 
         <div class="modal fade w-100" id="vidmodal">
@@ -152,7 +160,7 @@
 
     </section>
 
-    <section class="container my-5 py-5">
+    <section class="container my-5 py-5" id="portfolio">
         <div class="row my-lg-5">
             <div class="accordion " id="accordionPanelsStayOpenExample">
                 <div class="accordion-item  bg-dark text-light">
@@ -211,11 +219,11 @@
         </div>
     </section>
 
-    <section class="container my-5 py-3">
+    <section class="container my-5 py-3" id="reviews">
         <div class="row mx-auto justify-content-between align-items-center gap-5">
             <div class="col col-xl-5 col-lg-6 col-12 order-lg-0 order-1 bg-dark bg-gradient px-sm-5 px-3 py-4 ">
                 <h3 class="display-5 fw-bold">Client Reviews</h3>
-                <hr class="my-4 text-primary opacity-100">
+                <hr class="my-4 text-primary opacity-75">
 
                 <div id="carouselExampleIndicators" class="carousel slide pb-5" data-bs-ride="true">
                     <div class="carousel-indicators">
@@ -295,22 +303,59 @@
                     </div>
                 </div>
             </div>
-                
-            <div class="col d-flex flex-xl-row flex-lg-column gap-5 justify-content-lg-end justify-content-center align-items-center h-25">
+
+            <div
+                class="col d-flex flex-xl-row flex-lg-column gap-5 justify-content-lg-end justify-content-center align-items-center h-25">
                 <img src="./Images/brand-1.png" alt="Loading Image" class="h-25 w-25">
                 <img src="./Images/brand-2.png" alt="Loading Image" class="h-25 w-25">
                 <img src="./Images/brand-3.png" alt="Loading Image" class="h-25 w-25">
             </div>
     </section>
 
+    <footer class="bg-primary">
+        <div class="container bg-primary mt-5  pt-5 pb-3">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center gap-4">
+                    <button type="button" class="btn btn-light border-dark rounded-circle p-sm-3 p-2"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Facebook"> <i
+                            class="fa-brands fa-facebook-f text-primary"></i> </button>
+                    <button type="button" class="btn btn-light border-dark  rounded-circle p-sm-3 p-2 "
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram"> <i
+                            class="fa-brands fa-instagram text-primary"></i></button>
+                    <button type="button" class="btn btn-light border-dark  rounded-circle  p-sm-3 p-2  "
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter"> <i
+                            class="fa-brands fa-twitter text-primary"></i></button>
+                    <button type="button" class="btn btn-light border-dark  rounded-circle p-sm-3 p-2"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="You Tube"> <i
+                            class="fa-brands fa-youtube text-primary"></i> </button>
+                </div>
 
+                <div class="col-12 footermenu mt-4">
+                    <ul
+                        class="navbar-nav flex-sm-row flex-column align-items-center justify-content-center mx-auto mb-sm-2 mb-lg-0  gap-sm-5 gap-3 py-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light text-uppercase " aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#services"> Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#portfolio"> Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-uppercase" href="#reviews"> Reviews</a>
+                        </li>
+                    </ul>
+                </div>
 
-
-    
-
-
-
-
+                <hr class=" opacity-50 text-light my-5 ">
+                <div class="col justify-content-center">
+                    <p class="text-center">Copyright © 2022 PortfMaker Website By <span class="text-dark">Diya</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- bootstrap js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.bundle.min.js"
@@ -319,14 +364,13 @@
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)) 
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
         const myCarouselElement = document.querySelector('#carouselExampleIndicators')
         const carousel = new bootstrap.Carousel(myCarouselElement, {
-        interval: 2000,
-        wrap: true
-}) 
+            interval: 2000,
+            wrap: true
+        }) 
     </script>
 </body>
-
 </html>
